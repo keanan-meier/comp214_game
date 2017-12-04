@@ -26,6 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>//handle spawning and deleting of background and floor
+backgroundHeight = sprite_get_height(spr_background);
+backgroundWidth = sprite_get_width(spr_background);
+
+groundHeight = sprite_get_height(spr_ground);
+groundWidth = sprite_get_width(spr_ground);
+
+
+//have to set to zero because gml sucks
 currentBackground = 0;
 currentGround = 0;
 nextBackground = 0;
@@ -55,22 +63,22 @@ nextGround = 0;
           <argument>
             <kind>1</kind>
             <string>
-
+//INFINITE SCROLLING
 if(currentBackground == 0){
     //create background
     currentBackground = instance_create(0,0,obj_background);
     
     //create ground
-    currentGround = instance_create(0,604,obj_ground);
+    currentGround = instance_create(0,backgroundHeight,obj_ground);
     
     //create nextbackground
-    nextBackground = instance_create(1280,0,obj_background);
+    nextBackground = instance_create(backgroundWidth,0,obj_background);
     
     //create nextground
-    nextGround = instance_create(1280,604,obj_ground);
+    nextGround = instance_create(backgroundWidth,backgroundHeight,obj_ground);
 } else {
 
-    if(currentBackground.x == -1280){
+    if(currentBackground.x == backgroundWidth * -1){
         
         //delete current
         instance_destroy(currentBackground);
@@ -82,14 +90,13 @@ if(currentBackground == 0){
         
         //make new next
         //create nextbackground
-        nextBackground = instance_create(1280,0,obj_background);
+        nextBackground = instance_create(backgroundWidth,0,obj_background);
         
         //create nextground
-        nextGround = instance_create(1280,604,obj_ground);
+        nextGround = instance_create(backgroundWidth,backgroundHeight,obj_ground);
     }
 
 };
-
 
 
 
