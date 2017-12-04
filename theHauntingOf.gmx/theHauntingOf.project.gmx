@@ -5,9 +5,21 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_ground</sprite>
+    <sprite>sprites\spr_background</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_player</object>
+    <object>objects\obj_ground</object>
+    <object>objects\obj_background</object>
+    <object>objects\obj_levelHandler</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_levelTest</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
