@@ -7,7 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_ground</sprite>
-    <sprite>sprites\spr_background</sprite>
+    <sprite>sprites\spr_background_1</sprite>
+    <sprite>sprites\spr_background_2</sprite>
+    <sprite>sprites\spr_background_3</sprite>
+    <sprite>sprites\spr_background_4</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

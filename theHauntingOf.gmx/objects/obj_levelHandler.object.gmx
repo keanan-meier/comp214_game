@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>//handle spawning and deleting of background and floor
-backgroundHeight = sprite_get_height(spr_background);
-backgroundWidth = sprite_get_width(spr_background);
+backgroundHeight = sprite_get_height(spr_background_1);
+backgroundWidth = sprite_get_width(spr_background_1);
 
 groundHeight = sprite_get_height(spr_ground);
 groundWidth = sprite_get_width(spr_ground);
@@ -91,7 +91,9 @@ if(currentBackground == 0){
         //make new next
         //create nextbackground
         nextBackground = instance_create(backgroundWidth,0,obj_background);
-        
+        //randomize the sprite    will use this and check distance to handle level changing
+        nextBackground.sprite_index = choose(spr_background_1,spr_background_2,spr_background_3,spr_background_4);
+
         //create nextground
         nextGround = instance_create(backgroundWidth,backgroundHeight,obj_ground);
     }
