@@ -39,6 +39,9 @@ currentGround = 0;
 nextBackground = 0;
 nextGround = 0;
 
+//distance
+distance = 0;
+
 
 </string>
           </argument>
@@ -100,6 +103,9 @@ if(currentBackground == 0){
 
 };
 
+if(keyboard_check(vk_right)) {
+    distance ++;
+}
 
 
 </string>
