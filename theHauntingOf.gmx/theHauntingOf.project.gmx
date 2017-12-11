@@ -11,14 +11,31 @@
     <sprite>sprites\spr_background_2</sprite>
     <sprite>sprites\spr_background_3</sprite>
     <sprite>sprites\spr_background_4</sprite>
+    <sprite>sprites\spr_obstacle1</sprite>
+    <sprite>sprites\spr_responsibility</sprite>
+    <sprites name="lvl1">
+      <sprite>sprites\spr_lvl1_bck</sprite>
+      <sprite>sprites\spr_lvl1_bck_1</sprite>
+      <sprite>sprites\spr_lvl1_bck_2</sprite>
+      <sprite>sprites\spr_lvl1_bck_3</sprite>
+      <sprite>sprites\spr_lvl1_bck_4</sprite>
+      <sprite>sprites\spr_lvl1_bck_5</sprite>
+      <sprite>sprites\spr_lvl1_bck_6</sprite>
+      <sprite>sprites\spr_lvl1_bck_7</sprite>
+      <sprite>sprites\spr_lvl1_bck_8</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_lvl1</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_ground</object>
     <object>objects\obj_background</object>
     <object>objects\obj_levelHandler</object>
+    <object>objects\obj_obstacle</object>
+    <object>objects\obj_responsibilty</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_levelTest</room>

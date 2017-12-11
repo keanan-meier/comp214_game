@@ -26,28 +26,23 @@
           <argument>
             <kind>1</kind>
             <string>//handle scroll speed
-global.scrollSpeed = -5;
+global.scrollSpeed = -10;
 tempScroll = global.scrollSpeed;
 
 //handle spawning and deleting of background and floor
-backgroundHeight = sprite_get_height(spr_background_1);
-backgroundWidth = sprite_get_width(spr_background_1);
-backgroundWidthSafe = backgroundWidth - 100;
-
-groundHeight = sprite_get_height(spr_ground);
-groundWidth = sprite_get_width(spr_ground);
+backgroundHeight = sprite_get_height(spr_lvl1_bck);
+backgroundWidth = sprite_get_width(spr_lvl1_bck);
+backgroundWidthSafe = backgroundWidth;
 
 canDelete = false;
 
 //have to set to zero because gml sucks
 currentBackground = 0;
-currentGround = 0;
 nextBackground = 0;
-nextGround = 0;
 oldBackground = 0;
-oldGround = 0;
 
-
+//delay to handle obstacles
+timeBetween = 0;
 
 //distance
 distance = 0;
@@ -81,58 +76,60 @@ distance = 0;
 if(currentBackground == 0){
     //create background
     currentBackground = instance_create(0,0,obj_background);
-    
-    //create ground
-    currentGround = instance_create(0,backgroundHeight,obj_ground);
-    
+       
     //create nextbackground
     nextBackground = instance_create(backgroundWidth,0,obj_background);
     
-    //create nextground
-    nextGround = instance_create(backgroundWidth,backgroundHeight,obj_ground);
-    
     //set old background to start
     oldBackground = currentBackground;
-    oldGround = currentGround;
 } else {
     //background is almost off screen, spawn new one
     if(currentBackground.x &lt;= backgroundWidthSafe * -1) {    
         
         //set current to next
         oldBackground = currentBackground;
-        oldGround = currentGround;
-        
         currentBackground = nextBackground;
-        currentGround = nextGround;
         
         //make new next
         //create nextbackground
         nextBackground = instance_create(backgroundWidth,0,obj_background);
         //randomize the sprite    will use this and check distance to handle level changing
-        nextBackground.sprite_index = choose(spr_background_1,spr_background_2,spr_background_3,spr_background_4);
+        nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
 
-        //create nextground
-        nextGround = instance_create(backgroundWidth,backgroundHeight,obj_ground);
     }
-
     
     //background is off screen, delete it        
     if(oldBackground.x &lt;= backgroundWidth * -1) {
     
         //speed up scrolling
-        if(global.scrollSpeed &gt; -100){
-            tempScroll -= .05;
+        if(global.scrollSpeed &gt; -20){
+            tempScroll -= 0.5;
             global.scrollSpeed = round(tempScroll);
         }       
     
         //delete old
         instance_destroy(oldBackground);
-        instance_destroy(oldGround);
         
         oldBackground = currentBackground;
-        oldGround = currentGround;
     }
 };
+
+
+//spawn obstacles
+timeBetween ++;
+
+//level 1 2 second delay
+if(timeBetween == 60){
+    
+    //get random number   
+    if(round(random_range(0,2)) == 1){
+        instance_create(backgroundWidth + 100 ,backgroundHeight - 100,obj_obstacle);
+    }
+    
+    timeBetween = 0;
+}
+    
+    
 
 if(keyboard_check(vk_right)) {
     distance += 0.5;
