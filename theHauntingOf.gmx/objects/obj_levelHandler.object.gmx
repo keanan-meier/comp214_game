@@ -2,8 +2,8 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>0</depth>
+  <visible>-1</visible>
+  <depth>-9999</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,19 +25,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//handle spawning and deleting of background and floor
+            <string>//handle scroll speed
+global.scrollSpeed = -5;
+tempScroll = global.scrollSpeed;
+
+//handle spawning and deleting of background and floor
 backgroundHeight = sprite_get_height(spr_background_1);
 backgroundWidth = sprite_get_width(spr_background_1);
+backgroundWidthSafe = backgroundWidth - 100;
 
 groundHeight = sprite_get_height(spr_ground);
 groundWidth = sprite_get_width(spr_ground);
 
+canDelete = false;
 
 //have to set to zero because gml sucks
 currentBackground = 0;
 currentGround = 0;
 nextBackground = 0;
 nextGround = 0;
+oldBackground = 0;
+oldGround = 0;
+
+
 
 //distance
 distance = 0;
@@ -48,7 +58,7 @@ distance = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -66,6 +76,7 @@ distance = 0;
           <argument>
             <kind>1</kind>
             <string>
+
 //INFINITE SCROLLING
 if(currentBackground == 0){
     //create background
@@ -79,15 +90,18 @@ if(currentBackground == 0){
     
     //create nextground
     nextGround = instance_create(backgroundWidth,backgroundHeight,obj_ground);
-} else {
-
-    if(currentBackground.x == backgroundWidth * -1){
-        
-        //delete current
-        instance_destroy(currentBackground);
-        instance_destroy(currentGround);
     
+    //set old background to start
+    oldBackground = currentBackground;
+    oldGround = currentGround;
+} else {
+    //background is almost off screen, spawn new one
+    if(currentBackground.x &lt;= backgroundWidthSafe * -1) {    
+        
         //set current to next
+        oldBackground = currentBackground;
+        oldGround = currentGround;
+        
         currentBackground = nextBackground;
         currentGround = nextGround;
         
@@ -101,13 +115,57 @@ if(currentBackground == 0){
         nextGround = instance_create(backgroundWidth,backgroundHeight,obj_ground);
     }
 
+    
+    //background is off screen, delete it        
+    if(oldBackground.x &lt;= backgroundWidth * -1) {
+    
+        //speed up scrolling
+        if(global.scrollSpeed &gt; -100){
+            tempScroll -= .05;
+            global.scrollSpeed = round(tempScroll);
+        }       
+    
+        //delete old
+        instance_destroy(oldBackground);
+        instance_destroy(oldGround);
+        
+        oldBackground = currentBackground;
+        oldGround = currentGround;
+    }
 };
 
 if(keyboard_check(vk_right)) {
-    distance ++;
+    distance += 0.5;
 }
 
 
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(15,15, "Distance: " + string(round(distance)) + "m");
 </string>
           </argument>
         </arguments>
