@@ -94,8 +94,9 @@ if(currentBackground == 0){
         //create nextbackground
         nextBackground = instance_create(backgroundWidth,0,obj_background);
         //randomize the sprite    will use this and check distance to handle level changing
-        nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
-
+        if(distance &lt; 500){
+            nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
+        }
     }
     
     //background is off screen, delete it        
