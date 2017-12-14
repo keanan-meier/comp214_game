@@ -9,14 +9,14 @@
     <sound>sound\jumpingSound</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_Ted2</sprite>
-    <sprite>sprites\spr_Ted1</sprite>
+    <sprite>sprites\spr_testground</sprite>
+    <sprite>sprites\spr_Ted</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_Ted2</object>
-    <object>objects\obj_Ted1</object>
+    <object>objects\obj_testground</object>
+    <object>objects\obj_Ted</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
