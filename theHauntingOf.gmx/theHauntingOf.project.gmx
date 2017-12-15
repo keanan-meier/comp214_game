@@ -9,8 +9,6 @@
     <sound>sound\jumpingSound</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_Ted2</sprite>
-    <sprite>sprites\spr_Ted1</sprite>
     <sprite>sprites\spr_testground</sprite>
     <sprite>sprites\spr_Ted</sprite>
     <sprite>sprites\spr_ground</sprite>
