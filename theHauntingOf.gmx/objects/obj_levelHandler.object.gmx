@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//handle scroll speed
-global.scrollSpeed = -10;
+global.scrollSpeed = -6;
 tempScroll = global.scrollSpeed;
 
 //handle spawning and deleting of background and floor
@@ -94,8 +94,35 @@ if(currentBackground == 0){
         //create nextbackground
         nextBackground = instance_create(backgroundWidth,0,obj_background);
         //randomize the sprite    will use this and check distance to handle level changing
-        if(distance &lt; 500){
+        
+        if(distance &lt; 500){ //level 1 
+            //change background
             nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
+            background_index[0] = choose(bck_lvl1);
+            
+        }else if(distance &lt; 550){ //transition 1
+            //change background
+            nextBackground.sprite_index = choose(spr_lvl1_transition);
+            background_index[0] = choose(bck_transition); 
+            
+            //move craig
+            
+            //stop spawning obstacles
+            
+            //show level popup
+        }else if(distance &lt; 1000){ //level 2
+        
+        }else if(distance &lt; 1050){ //transition 2
+            //change background
+            nextBackground.sprite_index = choose(spr_lvl1_transition);
+            background_index[0] = choose(bck_transition); 
+            
+            //move craig
+            
+            //stop spawning obstacles
+            
+            //show level popup
+        }else if(distance &lt; 1500){ // level 3
         }
     }
     
@@ -120,11 +147,11 @@ if(currentBackground == 0){
 timeBetween ++;
 
 //level 1 2 second delay
-if(timeBetween == 60){
+if(timeBetween == 45){
     
     //get random number   
     if(round(random_range(0,2)) == 1){
-        instance_create(backgroundWidth + 100 ,backgroundHeight - 100,obj_obstacle);
+        instance_create(backgroundWidth + 100 ,backgroundHeight - 50,obj_obstacle);
     }
     
     timeBetween = 0;

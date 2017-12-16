@@ -12,11 +12,6 @@
     <sprite>sprites\spr_testground</sprite>
     <sprite>sprites\spr_Ted</sprite>
     <sprite>sprites\spr_ground</sprite>
-    <sprite>sprites\spr_background_1</sprite>
-    <sprite>sprites\spr_background_2</sprite>
-    <sprite>sprites\spr_background_3</sprite>
-    <sprite>sprites\spr_background_4</sprite>
-    <sprite>sprites\spr_obstacle1</sprite>
     <sprite>sprites\spr_responsibility</sprite>
     <sprites name="lvl1">
       <sprite>sprites\spr_lvl1_bck</sprite>
@@ -28,10 +23,13 @@
       <sprite>sprites\spr_lvl1_bck_6</sprite>
       <sprite>sprites\spr_lvl1_bck_7</sprite>
       <sprite>sprites\spr_lvl1_bck_8</sprite>
+      <sprite>sprites\spr_lvl1_transition</sprite>
+      <sprite>sprites\spr_obstacle_1</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
+    <background>background\bck_transition</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
