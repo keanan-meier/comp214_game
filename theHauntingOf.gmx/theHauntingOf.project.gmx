@@ -10,7 +10,6 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_testground</sprite>
-    <sprite>sprites\spr_Ted</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_responsibility</sprite>
     <sprites name="lvl1">
@@ -24,8 +23,18 @@
       <sprite>sprites\spr_lvl1_bck_7</sprite>
       <sprite>sprites\spr_lvl1_bck_8</sprite>
       <sprite>sprites\spr_lvl1_transition</sprite>
-      <sprite>sprites\spr_obstacle_1</sprite>
+      <sprite>sprites\spr_obstacle_lvl1_1</sprite>
+      <sprite>sprites\spr_obstacle_lvl1_2</sprite>
+      <sprite>sprites\spr_obstacle_lvl1_3</sprite>
+      <sprite>sprites\spr_lvl1_trans</sprite>
     </sprites>
+    <sprites name="Ted">
+      <sprite>sprites\spr_Ted_right</sprite>
+      <sprite>sprites\spr_Ted_left</sprite>
+      <sprite>sprites\spr_Ted_idle</sprite>
+      <sprite>sprites\spr_Ted_hit</sprite>
+    </sprites>
+    <sprite>sprites\spr_gameover_txt</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -35,7 +44,6 @@
   <objects name="objects">
     <object>objects\obj_testground</object>
     <object>objects\obj_Ted</object>
-    <object>objects\obj_player</object>
     <objects name="levelGen">
       <object>objects\obj_levelHandler</object>
       <object>objects\obj_responsibilty</object>
@@ -43,9 +51,12 @@
       <object>objects\obj_background</object>
       <object>objects\obj_ground</object>
     </objects>
+    <object>objects\obj_lvl_popup</object>
+    <object>objects\obj_gameover</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_levelTest</room>
+    <room>rooms\rm_gamveover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

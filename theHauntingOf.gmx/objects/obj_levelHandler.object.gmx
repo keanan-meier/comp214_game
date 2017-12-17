@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-9999</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//handle scroll speed
-global.scrollSpeed = -6;
+global.scrollSpeed = -10;
 tempScroll = global.scrollSpeed;
 
 //handle spawning and deleting of background and floor
@@ -47,7 +47,16 @@ timeBetween = 0;
 //distance
 distance = 0;
 
+//obstacles
+obstacle = 0;
+spawnObstacles = 0;
 
+//transitions
+levelpopup = 0;
+
+//responsibility
+craig = instance_create(96,544,obj_responsibilty);
+craigCount = 0;
 </string>
           </argument>
         </arguments>
@@ -96,33 +105,70 @@ if(currentBackground == 0){
         //randomize the sprite    will use this and check distance to handle level changing
         
         if(distance &lt; 500){ //level 1 
+        
+            //enable obstacles
+            spawnObstacles = 1;
+        
             //change background
             nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
             background_index[0] = choose(bck_lvl1);
             
-        }else if(distance &lt; 550){ //transition 1
-            //change background
-            nextBackground.sprite_index = choose(spr_lvl1_transition);
-            background_index[0] = choose(bck_transition); 
-            
-            //move craig
-            
-            //stop spawning obstacles
-            
-            //show level popup
-        }else if(distance &lt; 1000){ //level 2
+        }else if(distance &lt; 650){ //transition 1
         
-        }else if(distance &lt; 1050){ //transition 2
+            //disable obstacles
+            spawnObstacles = 0;
+        
             //change background
             nextBackground.sprite_index = choose(spr_lvl1_transition);
             background_index[0] = choose(bck_transition); 
+                    
+            //show level popup
+            if(levelpopup == 0){
+                levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
+            }
             
             //move craig
+            if(craig.x != -124){
+                craig.x = -124;
+            }
+            
+        }else if(distance &lt; 2000){ //level 2
+              
+            //enable obstacles
+            spawnObstacles = 1;
+        
+            //delete popup
+            instance_destroy(levelpopup);
+            levelpopup = 0;
+            
+            if(craig.x != 94){
+                craig.x = 94;
+            }
+            
+            
+            //change background 
+            nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
+            background_index[0] = choose(bck_lvl1); 
+        
+        }else if(distance &lt; 2150){ //transition 2
+        
+            //disable obstacles
+            spawnObstacles = 0;
+        
+            //change background
+            nextBackground.sprite_index = choose(spr_lvl1_transition);
+            background_index[0] = choose(bck_transition);           
             
             //stop spawning obstacles
             
             //show level popup
-        }else if(distance &lt; 1500){ // level 3
+            if(levelpopup == 0){
+                levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
+            }
+            
+        }else if(distance &lt; 4000){ // level 3
+        
+            
         }
     }
     
@@ -144,22 +190,25 @@ if(currentBackground == 0){
 
 
 //spawn obstacles
-timeBetween ++;
-
-//level 1 2 second delay
-if(timeBetween == 45){
+if(spawnObstacles == 1){
+    timeBetween ++;
     
-    //get random number   
-    if(round(random_range(0,2)) == 1){
-        instance_create(backgroundWidth + 100 ,backgroundHeight - 50,obj_obstacle);
+    //level 1 2 second delay
+    if(timeBetween == 60){
+        
+        //get random number   
+        if(round(random_range(0,2)) == 1){
+        
+            obstacle = instance_create(backgroundWidth + 100 ,backgroundHeight - 50,obj_obstacle);
+            obstacle.sprite_index = choose(spr_obstacle_lvl1_1, spr_obstacle_lvl1_2, spr_obstacle_lvl1_3);
+        }
+        
+        timeBetween = 0;
     }
-    
-    timeBetween = 0;
-}
-    
+}    
     
 
-if(keyboard_check(vk_right)) {
+if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left)) {
     distance += 0.5;
 }
 
