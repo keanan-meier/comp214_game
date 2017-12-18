@@ -129,6 +129,17 @@ if (place_meeting(x+hspd, y, obj_ground)) {
     }
 }
 
+if(caught == 1){
+    count++
+    global.scrollSpeed = 0;
+    hspd = 0;
+    
+    if(count == 30){
+        room_goto(rm_gamveover);
+    }
+    
+}
+
 if(hit == 1){
     count++;
     hspd = global.scrollSpeed - 5;
@@ -139,16 +150,7 @@ if(hit == 1){
     }
 }
 
-if(caught == 1){
-    count++
-    global.scrollSpeed = 0;
-    hspd = 0;
-    
-    if(count == 60){
-        room_goto(rm_gamveover);
-    }
-    
-}
+
 
 // Move horizontally
 x += hspd;
