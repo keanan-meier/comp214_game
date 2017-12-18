@@ -128,8 +128,8 @@ if(currentBackground == 0){
             }
             
             //move craig
-            if(craig.x != -124){
-                craig.x = -124;
+            if(craig.x != -200){
+                craig.x = -200;
             }
             
         }else if(distance &lt; 2000){ //level 2
@@ -159,7 +159,10 @@ if(currentBackground == 0){
             nextBackground.sprite_index = choose(spr_lvl1_transition);
             background_index[0] = choose(bck_transition);           
             
-            //stop spawning obstacles
+            //move craig
+            if(craig.x != -200){
+                craig.x = -200;
+            }
             
             //show level popup
             if(levelpopup == 0){
