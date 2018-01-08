@@ -12,6 +12,18 @@
     <sprite>sprites\spr_testground</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_responsibility</sprite>
+    <sprite>sprites\spr_response_old</sprite>
+    <sprite>sprites\spr_gameover_txt</sprite>
+    <sprites name="Ted">
+      <sprite>sprites\spr_Ted_right_small</sprite>
+      <sprite>sprites\spr_Ted_left_small</sprite>
+      <sprite>sprites\spr_Ted_idle_small</sprite>
+      <sprite>sprites\spr_Ted_hit_small</sprite>
+      <sprite>sprites\spr_Ted_right</sprite>
+      <sprite>sprites\spr_Ted_left</sprite>
+      <sprite>sprites\spr_Ted_idle</sprite>
+      <sprite>sprites\spr_Ted_hit</sprite>
+    </sprites>
     <sprites name="lvl1">
       <sprite>sprites\spr_lvl1_bck</sprite>
       <sprite>sprites\spr_lvl1_bck_1</sprite>
@@ -23,21 +35,51 @@
       <sprite>sprites\spr_lvl1_bck_7</sprite>
       <sprite>sprites\spr_lvl1_bck_8</sprite>
       <sprite>sprites\spr_lvl1_transition</sprite>
+      <sprite>sprites\spr_obstacle_lvl1_1_old</sprite>
       <sprite>sprites\spr_obstacle_lvl1_1</sprite>
+      <sprite>sprites\spr_obstacle_lvl1_2_old</sprite>
       <sprite>sprites\spr_obstacle_lvl1_2</sprite>
+      <sprite>sprites\spr_obstacle_lvl1_3_old</sprite>
       <sprite>sprites\spr_obstacle_lvl1_3</sprite>
       <sprite>sprites\spr_lvl1_trans</sprite>
     </sprites>
-    <sprites name="Ted">
-      <sprite>sprites\spr_Ted_right</sprite>
-      <sprite>sprites\spr_Ted_left</sprite>
-      <sprite>sprites\spr_Ted_idle</sprite>
-      <sprite>sprites\spr_Ted_hit</sprite>
+    <sprites name="lvl2">
+      <sprite>sprites\spr_lvl2_bck</sprite>
+      <sprite>sprites\spr_lvl2_bck_1</sprite>
+      <sprite>sprites\spr_lvl2_bck_2</sprite>
+      <sprite>sprites\spr_lvl2_bck_3</sprite>
+      <sprite>sprites\spr_lvl2_bck_4</sprite>
+      <sprite>sprites\spr_lvl2_bck_5</sprite>
+      <sprite>sprites\spr_lvl2_bck_6</sprite>
+      <sprite>sprites\spr_lvl2_bck_7</sprite>
+      <sprite>sprites\spr_lvl2_bck_8</sprite>
+      <sprite>sprites\spr_lvl2_transition</sprite>
+      <sprite>sprites\spr_obstacle_lvl2_1</sprite>
+      <sprite>sprites\spr_obstacle_lvl2_2</sprite>
+      <sprite>sprites\spr_obstacle_lvl2_3</sprite>
+      <sprite>sprites\spr_lvl2_trans</sprite>
     </sprites>
-    <sprite>sprites\spr_gameover_txt</sprite>
+    <sprites name="lvl3">
+      <sprite>sprites\spr_lvl3_bck</sprite>
+      <sprite>sprites\spr_lvl3_bck_1</sprite>
+      <sprite>sprites\spr_lvl3_bck_2</sprite>
+      <sprite>sprites\spr_lvl3_bck_3</sprite>
+      <sprite>sprites\spr_lvl3_bck_4</sprite>
+      <sprite>sprites\spr_lvl3_bck_5</sprite>
+      <sprite>sprites\spr_lvl3_bck_6</sprite>
+      <sprite>sprites\spr_lvl3_bck_7</sprite>
+      <sprite>sprites\spr_lvl3_bck_8</sprite>
+      <sprite>sprites\spr_lvl3_transition</sprite>
+      <sprite>sprites\spr_obstacle_lvl3_1</sprite>
+      <sprite>sprites\spr_obstacle_lvl3_2</sprite>
+      <sprite>sprites\spr_obstacle_lvl3_3</sprite>
+      <sprite>sprites\spr_lvl3_trans</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
+    <background>background\bck_lvl2</background>
+    <background>background\bck_lvl3</background>
     <background>background\bck_transition</background>
   </backgrounds>
   <paths name="paths"/>

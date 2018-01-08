@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//handle scroll speed
+            <string>display_reset(8, true);
+
+//handle scroll speed
 global.scrollSpeed = -10;
 tempScroll = global.scrollSpeed;
 
@@ -57,6 +59,14 @@ levelpopup = 0;
 //responsibility
 craig = instance_create(96,544,obj_responsibilty);
 craigCount = 0;
+
+//level vars
+level1 = 500;
+trans1 = 600;
+level2 = 1100;
+trans2 = 1200;
+level3 = 2000;
+finish = 2100;
 </string>
           </argument>
         </arguments>
@@ -104,7 +114,7 @@ if(currentBackground == 0){
         nextBackground = instance_create(backgroundWidth,0,obj_background);
         //randomize the sprite    will use this and check distance to handle level changing
         
-        if(distance &lt; 500){ //level 1 
+        if(distance &lt; level1){ //LEVEL 1
         
             //enable obstacles
             spawnObstacles = 1;
@@ -113,7 +123,7 @@ if(currentBackground == 0){
             nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
             background_index[0] = choose(bck_lvl1);
             
-        }else if(distance &lt; 650){ //transition 1
+        }else if(distance &lt; trans1){ //TRANSITION 1
         
             //disable obstacles
             spawnObstacles = 0;
@@ -125,6 +135,7 @@ if(currentBackground == 0){
             //show level popup
             if(levelpopup == 0){
                 levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
+                levelpopup.sprite_index = spr_lvl1_trans
             }
             
             //move craig
@@ -132,7 +143,7 @@ if(currentBackground == 0){
                 craig.x = -200;
             }
             
-        }else if(distance &lt; 2000){ //level 2
+        }else if(distance &lt; level2){ //LEVEL 2
               
             //enable obstacles
             spawnObstacles = 1;
@@ -141,36 +152,54 @@ if(currentBackground == 0){
             instance_destroy(levelpopup);
             levelpopup = 0;
             
+            //move craig
             if(craig.x != 94){
                 craig.x = 94;
             }
-            
-            
+                       
             //change background 
-            nextBackground.sprite_index = choose(spr_lvl1_bck,spr_lvl1_bck_1,spr_lvl1_bck_2,spr_lvl1_bck_3,spr_lvl1_bck_4,spr_lvl1_bck_5,spr_lvl1_bck_6,spr_lvl1_bck_7,spr_lvl1_bck_8);
-            background_index[0] = choose(bck_lvl1); 
+            nextBackground.sprite_index = choose(spr_lvl2_bck,spr_lvl2_bck_1,spr_lvl2_bck_2,spr_lvl2_bck_3,spr_lvl2_bck_4,spr_lvl2_bck_5,spr_lvl2_bck_6,spr_lvl2_bck_7,spr_lvl2_bck_8);
+            background_index[0] = choose(bck_lvl2); 
         
-        }else if(distance &lt; 2150){ //transition 2
+        }else if(distance &lt; trans2){ //TRANSITION 2 
         
             //disable obstacles
             spawnObstacles = 0;
         
             //change background
-            nextBackground.sprite_index = choose(spr_lvl1_transition);
-            background_index[0] = choose(bck_transition);           
+            nextBackground.sprite_index = choose(spr_lvl2_transition);
+            background_index[0] = choose(bck_transition); 
+                    
+            //show level popup
+            if(levelpopup == 0){
+                levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
+                levelpopup.sprite_index = spr_lvl2_trans
+            }
             
             //move craig
             if(craig.x != -200){
                 craig.x = -200;
             }
             
-            //show level popup
-            if(levelpopup == 0){
-                levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
-            }
-            
-        }else if(distance &lt; 4000){ // level 3
+        }else if(distance &lt; level3){ // LEVEL 3
         
+            //enable obstacles
+            spawnObstacles = 1;
+        
+            //delete popup
+            instance_destroy(levelpopup);
+            levelpopup = 0;
+            
+            //move craig
+            if(craig.x != 94){
+                craig.x = 94;
+            }
+                       
+            //change background 
+            nextBackground.sprite_index = choose(spr_lvl3_bck,spr_lvl3_bck_1,spr_lvl3_bck_2,spr_lvl3_bck_3,spr_lvl3_bck_4,spr_lvl3_bck_5,spr_lvl3_bck_6,spr_lvl3_bck_7,spr_lvl3_bck_8);
+            background_index[0] = choose(bck_lvl3); 
+            
+        }else if(distance &lt; finish){ // ENDING
             
         }
     }
