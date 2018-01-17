@@ -76,6 +76,7 @@
       <sprite>sprites\spr_obstacle_lvl3_3</sprite>
       <sprite>sprites\spr_lvl3_trans</sprite>
     </sprites>
+    <sprite>sprites\spr_Quit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
