@@ -141,6 +141,7 @@ if(currentBackground == 0){
             //move craig
             if(craig.x != -200){
                 craig.x = -200;
+                craig.sprite_index = spr_respo;
             }
             
         }else if(distance &lt; level2){ //LEVEL 2
