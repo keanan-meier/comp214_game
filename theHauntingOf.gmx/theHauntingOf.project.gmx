@@ -7,10 +7,11 @@
   <sounds name="sound">
     <sound>sound\walkingSound</sound>
     <sound>sound\jumpingSound</sound>
-    <sound>sound\level1_BackgroundMusic</sound>
+    <sound>sound\game_Music</sound>
+    <sound>sound\button_SoundEffect</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_testground</sprite>
+    <sprite>sprites\spr_tempCursor</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_responsibility</sprite>
     <sprite>sprites\spr_response_old</sprite>
@@ -77,6 +78,13 @@
       <sprite>sprites\spr_lvl3_trans</sprite>
     </sprites>
     <sprite>sprites\spr_Quit</sprite>
+    <sprite>sprites\spr_lvl1_trans_new</sprite>
+    <sprite>sprites\spr_Title</sprite>
+    <sprite>sprites\spr_Credits</sprite>
+    <sprite>sprites\spr_Tutorial</sprite>
+    <sprite>sprites\spr_HighScore</sprite>
+    <sprite>sprites\spr_StartGame</sprite>
+    <sprite>sprites\spr_teamLogo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -86,7 +94,7 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_testground</object>
+    <object>objects\obj_tempCursor</object>
     <object>objects\obj_Ted</object>
     <objects name="levelGen">
       <object>objects\obj_levelHandler</object>
@@ -97,11 +105,19 @@
     </objects>
     <object>objects\obj_lvl_popup</object>
     <object>objects\obj_gameover</object>
+    <object>objects\obj_Title</object>
+    <object>objects\obj_Music</object>
+    <object>objects\obj_HighScore</object>
+    <object>objects\obj_Credits</object>
+    <object>objects\obj_Quit</object>
+    <object>objects\obj_Tutorial</object>
+    <object>objects\obj_StartGame</object>
+    <object>objects\obj_teamLogo</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menuRoom</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm_gamveover</room>
-    <room>rooms\rm_menuRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
