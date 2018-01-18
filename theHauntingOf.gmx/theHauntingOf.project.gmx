@@ -16,18 +16,22 @@
     <sprite>sprites\spr_gameover_txt</sprite>
     <sprites name="Ted">
       <sprites name="lvl1">
-        <sprite>sprites\spr_Ted_right_small</sprite>
-        <sprite>sprites\spr_Ted_left_small</sprite>
-        <sprite>sprites\spr_Ted_idle_small</sprite>
-        <sprite>sprites\spr_Ted_hit_small</sprite>
         <sprite>sprites\spr_Ted_right</sprite>
-        <sprite>sprites\spr_Ted_idle</sprite>
         <sprite>sprites\spr_Ted_left</sprite>
+        <sprite>sprites\spr_Ted_idle</sprite>
         <sprite>sprites\spr_Ted_hit</sprite>
       </sprites>
       <sprites name="lvl2">
         <sprite>sprites\spr_Ted_right_2</sprite>
         <sprite>sprites\spr_Ted_left_2</sprite>
+        <sprite>sprites\spr_Ted_idle_2</sprite>
+        <sprite>sprites\spr_Ted_hit_2</sprite>
+      </sprites>
+      <sprites name="lvl3">
+        <sprite>sprites\spr_Ted_right_3</sprite>
+        <sprite>sprites\spr_Ted_left_3</sprite>
+        <sprite>sprites\spr_Ted_idle_3</sprite>
+        <sprite>sprites\spr_Ted_hit_3</sprite>
       </sprites>
     </sprites>
     <sprites name="lvl1">
