@@ -60,6 +60,7 @@
     <instance objName="obj_HighScore" x="192" y="544" name="inst_C7506204" locked="0" code="" scaleX="0.720000028610229" scaleY="0.503816783428192" colour="4294967295" rotation="0"/>
     <instance objName="obj_Quit" x="192" y="640" name="inst_3519AA9E" locked="0" code="" scaleX="0.720000028610229" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
     <instance objName="obj_teamLogo" x="1024" y="160" name="inst_0CE2B55D" locked="0" code="" scaleX="0.610000014305115" scaleY="0.490000009536743" colour="4294967295" rotation="0"/>
+    <instance objName="obj_startText" x="193" y="256" name="inst_44732413" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

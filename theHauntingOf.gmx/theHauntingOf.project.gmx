@@ -85,6 +85,7 @@
     <sprite>sprites\spr_HighScore</sprite>
     <sprite>sprites\spr_StartGame</sprite>
     <sprite>sprites\spr_teamLogo</sprite>
+    <sprite>sprites\spr_startText</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -113,6 +114,7 @@
     <object>objects\obj_Tutorial</object>
     <object>objects\obj_StartGame</object>
     <object>objects\obj_teamLogo</object>
+    <object>objects\obj_startText</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
