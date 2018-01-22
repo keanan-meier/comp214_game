@@ -13,6 +13,7 @@
     <sprite>sprites\spr_testground</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_response_old</sprite>
+    <sprite>sprites\spr_victory_txt</sprite>
     <sprite>sprites\spr_gameover_txt</sprite>
     <sprites name="Ted">
       <sprites name="lvl1">
@@ -87,8 +88,9 @@
     </sprites>
     <sprites name="Resposibilities">
       <sprite>sprites\spr_responsibility</sprite>
+      <sprite>sprites\spr_responsibility_old</sprite>
+      <sprite>sprites\spr_responsibility_3</sprite>
       <sprite>sprites\spr_responsibility_2</sprite>
-      <sprite>sprites\spr_respo</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -98,9 +100,13 @@
     <background>background\bck_transition</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font_main</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_testground</object>
     <object>objects\obj_Ted</object>
+    <object>objects\obj_Ted_fake</object>
     <objects name="levelGen">
       <object>objects\obj_levelHandler</object>
       <object>objects\obj_responsibilty</object>
@@ -110,6 +116,8 @@
     </objects>
     <object>objects\obj_lvl_popup</object>
     <object>objects\obj_gameover</object>
+    <object>objects\trans_start</object>
+    <object>objects\obj_victory</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_levelTest</room>

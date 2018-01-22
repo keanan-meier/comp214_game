@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>display_reset(8, true);
-
+            <string>
 //handle scroll speed
 global.scrollSpeed = -10;
 tempScroll = global.scrollSpeed;
@@ -66,7 +65,17 @@ global.trans1 = 600;
 global.level2 = 1100;
 global.trans2 = 1200;
 global.level3 = 2000;
-global.finish = 2100;
+global.finish = 2000;
+
+//for testing
+//global.level1 = 100;
+//global.trans1 = 200;
+//global.level2 = 300;
+//global.trans2 = 400;
+//global.level3 = 500;
+//global.finish = 500;
+
+finished = false;
 </string>
           </argument>
         </arguments>
@@ -135,13 +144,13 @@ if(currentBackground == 0){
             //show level popup
             if(levelpopup == 0){
                 levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
-                levelpopup.sprite_index = spr_lvl1_trans
+                levelpopup.sprite_index = spr_lvl2_trans
             }
             
             //move craig
             if(craig.x != -200){
                 craig.x = -200;
-                craig.sprite_index = spr_respo;
+                craig.sprite_index = spr_responsibility_2;
             }
             
         }else if(global.distance &lt; global.level2){ //LEVEL 2
@@ -174,7 +183,7 @@ if(currentBackground == 0){
             //show level popup
             if(levelpopup == 0){
                 levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
-                levelpopup.sprite_index = spr_lvl2_trans
+                levelpopup.sprite_index = spr_lvl3_trans
             }
             
             //move craig
@@ -194,13 +203,12 @@ if(currentBackground == 0){
             //move craig
             if(craig.x != 94){
                 craig.x = 94;
+                craig.sprite_index = spr_responsibility_3;
             }
                        
             //change background 
             nextBackground.sprite_index = choose(spr_lvl3_bck,spr_lvl3_bck_1,spr_lvl3_bck_2,spr_lvl3_bck_3,spr_lvl3_bck_4,spr_lvl3_bck_5,spr_lvl3_bck_6,spr_lvl3_bck_7,spr_lvl3_bck_8);
             background_index[0] = choose(bck_lvl3); 
-            
-        }else if(global.distance &lt; finish){ // ENDING
             
         }
     }
@@ -220,6 +228,30 @@ if(currentBackground == 0){
         oldBackground = currentBackground;
     }
 };
+
+if(global.distance &gt; global.finish){ // ENDING
+
+    if(finished == false){
+        instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_victory);
+    }
+    
+    finished = true;
+    
+    if(global.scrollSpeed != 0){
+        tempScroll += 0.5;
+        global.scrollSpeed = round(tempScroll);
+    }
+        
+    if(spawnObstacles != 0){
+        spawnObstacles = 0;
+    }
+    //move craig
+    if(craig.x != -200){
+        craig.x = -200;
+    }
+    
+    
+}
 
 
 //spawn obstacles
@@ -241,7 +273,7 @@ if(spawnObstacles == 1){
 }    
     
 
-if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left)) {
+if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left) &amp;&amp; finished == false) {
     global.distance += 0.5;
 }
 
@@ -258,6 +290,30 @@ if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left)) {
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>font_main</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -272,7 +328,7 @@ if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(15,15, "Distance: " + string(round(global.distance)) + "m");
+            <string>draw_text(640,15, "DISTANCE: " + string(round(global.distance)) + "M");
 </string>
           </argument>
         </arguments>
