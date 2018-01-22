@@ -59,7 +59,7 @@ idleSpr = 0;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>level1_BackgroundMusic</sound>
+            <sound>game_Music</sound>
           </argument>
           <argument>
             <kind>3</kind>

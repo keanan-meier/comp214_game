@@ -7,10 +7,12 @@
   <sounds name="sound">
     <sound>sound\walkingSound</sound>
     <sound>sound\jumpingSound</sound>
-    <sound>sound\level1_BackgroundMusic</sound>
+    <sound>sound\game_Music</sound>
+    <sound>sound\button_SoundEffect</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_testground</sprite>
+    <sprite>sprites\spr_tempCursor</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_response_old</sprite>
     <sprite>sprites\spr_victory_txt</sprite>
@@ -92,6 +94,17 @@
       <sprite>sprites\spr_responsibility_3</sprite>
       <sprite>sprites\spr_responsibility_2</sprite>
     </sprites>
+    <sprite>sprites\spr_Quit</sprite>
+    <sprite>sprites\spr_gameTitleText</sprite>
+    <sprite>sprites\spr_Credits</sprite>
+    <sprite>sprites\spr_Tutorial</sprite>
+    <sprite>sprites\spr_StartGame</sprite>
+    <sprite>sprites\spr_teamLogo</sprite>
+    <sprite>sprites\spr_startText</sprite>
+    <sprite>sprites\spr_quitText</sprite>
+    <sprite>sprites\spr_creditsText</sprite>
+    <sprite>sprites\spr_tutorialText</sprite>
+    <sprite>sprites\spr_teamTICCredit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -104,6 +117,7 @@
     <font>fonts\font_main</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_tempCursor</object>
     <object>objects\obj_testground</object>
     <object>objects\obj_Ted</object>
     <object>objects\obj_Ted_fake</object>
@@ -118,8 +132,21 @@
     <object>objects\obj_gameover</object>
     <object>objects\trans_start</object>
     <object>objects\obj_victory</object>
+    <object>objects\obj_gameTitleText</object>
+    <object>objects\obj_Music</object>
+    <object>objects\obj_Credits</object>
+    <object>objects\obj_Quit</object>
+    <object>objects\obj_Tutorial</object>
+    <object>objects\obj_StartGame</object>
+    <object>objects\obj_teamLogo</object>
+    <object>objects\obj_startText</object>
+    <object>objects\obj_quitText</object>
+    <object>objects\obj_creditsText</object>
+    <object>objects\obj_tutorialText</object>
+    <object>objects\obj_teamTICCredit</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menuRoom</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm_gamveover</room>
   </rooms>
