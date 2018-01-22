@@ -51,20 +51,18 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_Title" x="192" y="96" name="inst_01B29340" locked="0" code="" scaleX="1.44000005722046" scaleY="1.74000000953674" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Music" x="608" y="128" name="inst_EDFDD83C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Music" x="608" y="128" name="inst_8F0B1ED5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_StartGame" x="192" y="256" name="inst_DCE6B4FB" locked="0" code="" scaleX="0.720000028610229" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Credits" x="192" y="448" name="inst_C4A2F812" locked="0" code="" scaleX="0.434984534978867" scaleY="0.378048777580261" colour="4294967295" rotation="0"/>
-    <instance objName="obj_HighScore" x="256" y="544" name="inst_C7506204" locked="0" code="" scaleX="1.14999997615814" scaleY="0.503816783428192" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Quit" x="192" y="640" name="inst_3519AA9E" locked="0" code="" scaleX="0.720000028610229" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teamLogo" x="1024" y="160" name="inst_0CE2B55D" locked="0" code="" scaleX="0.610000014305115" scaleY="0.490000009536743" colour="4294967295" rotation="0"/>
-    <instance objName="obj_startText" x="192" y="256" name="inst_44732413" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_quitText" x="192" y="640" name="inst_5DAF1599" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_creditsText" x="192" y="448" name="inst_6355F034" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tutorial" x="192" y="352" name="inst_9DF5B69E" locked="0" code="" scaleX="0.430000007152557" scaleY="0.359756112098694" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorialText" x="192" y="352" name="inst_9C59DAB1" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_highScoreText" x="256" y="544" name="inst_E2F39D1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Music" x="608" y="64" name="inst_8F0B1ED5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_StartGame" x="192" y="192" name="inst_DCE6B4FB" locked="0" code="" scaleX="0.720000028610229" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Credits" x="192" y="384" name="inst_C4A2F812" locked="0" code="" scaleX="0.434984534978867" scaleY="0.378048777580261" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Quit" x="192" y="480" name="inst_3519AA9E" locked="0" code="" scaleX="0.720000028610229" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teamLogo" x="1056" y="160" name="inst_0CE2B55D" locked="0" code="" scaleX="0.654999971389771" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_startText" x="192" y="192" name="inst_44732413" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quitText" x="192" y="480" name="inst_5DAF1599" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_creditsText" x="192" y="384" name="inst_6355F034" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tutorial" x="192" y="288" name="inst_9DF5B69E" locked="0" code="" scaleX="0.430000007152557" scaleY="0.359756112098694" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorialText" x="192" y="288" name="inst_9C59DAB1" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gameTitleText" x="192" y="64" name="inst_7244DBB8" locked="0" code="" scaleX="1.10000002384186" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teamTICCredit" x="256" y="640" name="inst_B34621BD" locked="0" code="" scaleX="1.04999995231628" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
