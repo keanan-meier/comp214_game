@@ -56,7 +56,7 @@ spawnObstacles = 0;
 levelpopup = 0;
 
 //responsibility
-craig = instance_create(96,675,obj_responsibilty);
+craig = instance_create(-200,675,obj_responsibilty);
 craigCount = 0;
 
 //level vars
@@ -68,12 +68,12 @@ global.level3 = 2000;
 global.finish = 2000;
 
 //for testing
-//global.level1 = 100;
-//global.trans1 = 200;
-//global.level2 = 300;
-//global.trans2 = 400;
-//global.level3 = 500;
-//global.finish = 500;
+global.level1 = 100;
+global.trans1 = 200;
+global.level2 = 300;
+global.trans2 = 400;
+global.level3 = 500;
+global.finish = 500;
 
 finished = false;
 </string>
@@ -143,15 +143,15 @@ if(currentBackground == 0){
                     
             //show level popup
             if(levelpopup == 0){
-                levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
+                levelpopup = instance_create(backgroundWidth / 2,-260, obj_lvl_popup);
                 levelpopup.sprite_index = spr_lvl2_trans
             }
             
             //move craig
-            if(craig.x != -200){
-                craig.x = -200;
-                craig.sprite_index = spr_responsibility_2;
-            }
+            //if(craig.x != -200){
+            //    craig.x = -200;
+            //    craig.sprite_index = spr_responsibility_2;
+            //}
             
         }else if(global.distance &lt; global.level2){ //LEVEL 2
               
@@ -163,9 +163,9 @@ if(currentBackground == 0){
             levelpopup = 0;
             
             //move craig
-            if(craig.x != 94){
-                craig.x = 94;
-            }
+            //if(craig.x != 94){
+            //    craig.x = 94;
+            //}
                        
             //change background 
             nextBackground.sprite_index = choose(spr_lvl2_bck,spr_lvl2_bck_1,spr_lvl2_bck_2,spr_lvl2_bck_3,spr_lvl2_bck_4,spr_lvl2_bck_5,spr_lvl2_bck_6,spr_lvl2_bck_7,spr_lvl2_bck_8);
@@ -182,14 +182,14 @@ if(currentBackground == 0){
                     
             //show level popup
             if(levelpopup == 0){
-                levelpopup = instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_lvl_popup);
+                levelpopup = instance_create(backgroundWidth / 2, -260, obj_lvl_popup);
                 levelpopup.sprite_index = spr_lvl3_trans
             }
             
             //move craig
-            if(craig.x != -200){
-                craig.x = -200;
-            }
+            //if(craig.x != -200){
+            //    craig.x = -200;
+            //}
             
         }else if(global.distance &lt; global.level3){ // LEVEL 3
         
@@ -201,10 +201,10 @@ if(currentBackground == 0){
             levelpopup = 0;
             
             //move craig
-            if(craig.x != 94){
-                craig.x = 94;
-                craig.sprite_index = spr_responsibility_3;
-            }
+            //if(craig.x != 94){
+            //    craig.x = 94;
+            //    craig.sprite_index = spr_responsibility_3;
+            //}
                        
             //change background 
             nextBackground.sprite_index = choose(spr_lvl3_bck,spr_lvl3_bck_1,spr_lvl3_bck_2,spr_lvl3_bck_3,spr_lvl3_bck_4,spr_lvl3_bck_5,spr_lvl3_bck_6,spr_lvl3_bck_7,spr_lvl3_bck_8);
@@ -232,7 +232,7 @@ if(currentBackground == 0){
 if(global.distance &gt; global.finish){ // ENDING
 
     if(finished == false){
-        instance_create(backgroundWidth / 2, backgroundHeight / 2, obj_victory);
+        instance_create(backgroundWidth / 2, -260, obj_victory);
     }
     
     finished = true;
@@ -246,9 +246,9 @@ if(global.distance &gt; global.finish){ // ENDING
         spawnObstacles = 0;
     }
     //move craig
-    if(craig.x != -200){
-        craig.x = -200;
-    }
+    //if(craig.x != -200){
+    //    craig.x = -200;
+    //}
     
     
 }

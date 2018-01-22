@@ -165,7 +165,7 @@ if (place_meeting(x-50, y, obj_ground)) {
 }
 
 //check if hit obstacle
- if (place_meeting(x, y, obj_obstacle)){
+ if (place_meeting(x, y, obj_obstacle) &amp;&amp; caught !=1){
     if(hit == 0){
     hit = 1;
     sprite_index = hitSpr;
@@ -181,6 +181,8 @@ if (place_meeting(x-50, y, obj_ground)) {
 }
 
 if(caught == 1){
+
+    sprite_index = hitSpr;
     count++
     global.scrollSpeed = 0;
     hspd = 0;
@@ -191,11 +193,11 @@ if(caught == 1){
     
 }
 
-if(hit == 1){
+if(hit == 1 &amp;&amp; caught !=1){
     count++;
-    hspd = global.scrollSpeed - 5;
+    hspd =  global.scrollSpeed-5;
     
-    if(count == 30){
+    if(count == 15){
         hit = 0;
         count = 0;      
     }

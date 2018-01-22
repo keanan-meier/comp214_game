@@ -127,23 +127,25 @@
       <object>objects\obj_obstacle</object>
       <object>objects\obj_background</object>
       <object>objects\obj_ground</object>
+      <object>objects\obj_gameover</object>
+      <object>objects\trans_start</object>
+      <object>objects\obj_victory</object>
+      <object>objects\obj_lvl_popup</object>
     </objects>
-    <object>objects\obj_lvl_popup</object>
-    <object>objects\obj_gameover</object>
-    <object>objects\trans_start</object>
-    <object>objects\obj_victory</object>
-    <object>objects\obj_gameTitleText</object>
-    <object>objects\obj_Music</object>
-    <object>objects\obj_Credits</object>
-    <object>objects\obj_Quit</object>
-    <object>objects\obj_Tutorial</object>
-    <object>objects\obj_StartGame</object>
-    <object>objects\obj_teamLogo</object>
-    <object>objects\obj_startText</object>
-    <object>objects\obj_quitText</object>
-    <object>objects\obj_creditsText</object>
-    <object>objects\obj_tutorialText</object>
-    <object>objects\obj_teamTICCredit</object>
+    <objects name="menu">
+      <object>objects\obj_teamTICCredit</object>
+      <object>objects\obj_creditsText</object>
+      <object>objects\obj_quitText</object>
+      <object>objects\obj_tutorialText</object>
+      <object>objects\obj_teamLogo</object>
+      <object>objects\obj_startText</object>
+      <object>objects\obj_StartGame</object>
+      <object>objects\obj_Tutorial</object>
+      <object>objects\obj_Quit</object>
+      <object>objects\obj_Credits</object>
+      <object>objects\obj_Music</object>
+      <object>objects\obj_gameTitleText</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
