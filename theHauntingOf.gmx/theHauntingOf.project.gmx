@@ -105,6 +105,7 @@
     <sprite>sprites\spr_creditsText</sprite>
     <sprite>sprites\spr_tutorialText</sprite>
     <sprite>sprites\spr_teamTICCredit</sprite>
+    <sprite>sprites\spr_creditsBackButton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -144,11 +145,13 @@
     <object>objects\obj_creditsText</object>
     <object>objects\obj_tutorialText</object>
     <object>objects\obj_teamTICCredit</object>
+    <object>objects\obj_creditsBackButton</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm_gamveover</room>
+    <room>rooms\rm_creditsRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
