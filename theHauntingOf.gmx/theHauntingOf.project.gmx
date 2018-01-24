@@ -108,6 +108,11 @@
     <sprite>sprites\spr_creditsBackButton</sprite>
     <sprite>sprites\spr_creditsBackButtonText</sprite>
     <sprite>sprites\spr_creditsTed</sprite>
+    <sprite>sprites\spr_creditsTitle</sprite>
+    <sprite>sprites\spr_projectLeadText</sprite>
+    <sprite>sprites\spr_graphicDesignBAText</sprite>
+    <sprite>sprites\spr_leadDeveloperText</sprite>
+    <sprite>sprites\spr_developerText</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -150,12 +155,18 @@
     <object>objects\obj_creditsBackButton</object>
     <object>objects\obj_backButton</object>
     <object>objects\obj_creditsTed</object>
+    <object>objects\obj_creditsTitle</object>
+    <object>objects\obj_projectLeadText</object>
+    <object>objects\obj_graphicDesignBAText</object>
+    <object>objects\obj_leadDeveloperText</object>
+    <object>objects\obj_developerText</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm_gamveover</room>
     <room>rooms\rm_creditsRoom</room>
+    <room>rooms\rm_turorialLevelRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
