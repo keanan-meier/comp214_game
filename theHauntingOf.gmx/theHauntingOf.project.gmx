@@ -113,6 +113,9 @@
     <sprite>sprites\spr_graphicDesignBAText</sprite>
     <sprite>sprites\spr_leadDeveloperText</sprite>
     <sprite>sprites\spr_developerText</sprite>
+    <sprite>sprites\spr_tutorialBackButton</sprite>
+    <sprite>sprites\spr_tutorialBackButtonText</sprite>
+    <sprite>sprites\spr_tutorialObstacle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -160,6 +163,9 @@
     <object>objects\obj_graphicDesignBAText</object>
     <object>objects\obj_leadDeveloperText</object>
     <object>objects\obj_developerText</object>
+    <object>objects\obj_tutorialBackButton</object>
+    <object>objects\obj_tutorialBackButtonText</object>
+    <object>objects\obj_tutorialObstacle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
