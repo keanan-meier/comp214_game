@@ -116,6 +116,7 @@
     <sprite>sprites\spr_tutorialBackButton</sprite>
     <sprite>sprites\spr_tutorialBackButtonText</sprite>
     <sprite>sprites\spr_tutorialObstacle</sprite>
+    <sprite>sprites\spr_sleeping</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -171,9 +172,11 @@
       <object>objects\obj_tutorialText</object>
       <object>objects\obj_Tutorial_craig</object>
     </objects>
+    <object>objects\obj_sleeping</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
+    <room>rooms\rm_Intro</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm_gamveover</room>
     <room>rooms\rm_creditsRoom</room>
