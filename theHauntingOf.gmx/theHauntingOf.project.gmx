@@ -105,6 +105,17 @@
     <sprite>sprites\spr_creditsText</sprite>
     <sprite>sprites\spr_tutorialText</sprite>
     <sprite>sprites\spr_teamTICCredit</sprite>
+    <sprite>sprites\spr_creditsBackButton</sprite>
+    <sprite>sprites\spr_creditsBackButtonText</sprite>
+    <sprite>sprites\spr_creditsTed</sprite>
+    <sprite>sprites\spr_creditsTitle</sprite>
+    <sprite>sprites\spr_projectLeadText</sprite>
+    <sprite>sprites\spr_graphicDesignBAText</sprite>
+    <sprite>sprites\spr_leadDeveloperText</sprite>
+    <sprite>sprites\spr_developerText</sprite>
+    <sprite>sprites\spr_tutorialBackButton</sprite>
+    <sprite>sprites\spr_tutorialBackButtonText</sprite>
+    <sprite>sprites\spr_tutorialObstacle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -127,30 +138,41 @@
       <object>objects\obj_obstacle</object>
       <object>objects\obj_background</object>
       <object>objects\obj_ground</object>
-      <object>objects\obj_gameover</object>
-      <object>objects\trans_start</object>
-      <object>objects\obj_victory</object>
-      <object>objects\obj_lvl_popup</object>
     </objects>
-    <objects name="menu">
-      <object>objects\obj_teamTICCredit</object>
-      <object>objects\obj_creditsText</object>
-      <object>objects\obj_quitText</object>
-      <object>objects\obj_tutorialText</object>
-      <object>objects\obj_teamLogo</object>
-      <object>objects\obj_startText</object>
-      <object>objects\obj_StartGame</object>
-      <object>objects\obj_Tutorial</object>
-      <object>objects\obj_Quit</object>
-      <object>objects\obj_Credits</object>
-      <object>objects\obj_Music</object>
-      <object>objects\obj_gameTitleText</object>
-    </objects>
+    <object>objects\obj_lvl_popup</object>
+    <object>objects\obj_gameover</object>
+    <object>objects\trans_start</object>
+    <object>objects\obj_victory</object>
+    <object>objects\obj_gameTitleText</object>
+    <object>objects\obj_Music</object>
+    <object>objects\obj_Credits</object>
+    <object>objects\obj_Quit</object>
+    <object>objects\obj_Tutorial</object>
+    <object>objects\obj_StartGame</object>
+    <object>objects\obj_teamLogo</object>
+    <object>objects\obj_startText</object>
+    <object>objects\obj_quitText</object>
+    <object>objects\obj_creditsText</object>
+    <object>objects\obj_tutorialText</object>
+    <object>objects\obj_teamTICCredit</object>
+    <object>objects\obj_creditsBackButton</object>
+    <object>objects\obj_backButton</object>
+    <object>objects\obj_creditsTed</object>
+    <object>objects\obj_creditsTitle</object>
+    <object>objects\obj_projectLeadText</object>
+    <object>objects\obj_graphicDesignBAText</object>
+    <object>objects\obj_leadDeveloperText</object>
+    <object>objects\obj_developerText</object>
+    <object>objects\obj_tutorialBackButton</object>
+    <object>objects\obj_tutorialBackButtonText</object>
+    <object>objects\obj_tutorialObstacle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm_gamveover</room>
+    <room>rooms\rm_creditsRoom</room>
+    <room>rooms\rm_turorialLevelRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

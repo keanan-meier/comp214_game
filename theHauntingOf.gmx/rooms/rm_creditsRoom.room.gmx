@@ -6,9 +6,9 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>10</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>0</enableViews>
@@ -51,18 +51,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_StartGame" x="192" y="192" name="inst_DCE6B4FB" locked="0" code="" scaleX="0.720000028610229" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Credits" x="192" y="384" name="inst_C4A2F812" locked="0" code="" scaleX="0.434984534978867" scaleY="0.378048777580261" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Quit" x="192" y="480" name="inst_3519AA9E" locked="0" code="" scaleX="0.720000028610229" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teamLogo" x="1056" y="160" name="inst_0CE2B55D" locked="0" code="" scaleX="0.654999971389771" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_startText" x="192" y="192" name="inst_44732413" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_quitText" x="192" y="480" name="inst_5DAF1599" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_creditsText" x="192" y="384" name="inst_6355F034" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tutorial" x="192" y="288" name="inst_9DF5B69E" locked="0" code="" scaleX="0.430000007152557" scaleY="0.359756112098694" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorialText" x="192" y="288" name="inst_9C59DAB1" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gameTitleText" x="192" y="64" name="inst_7244DBB8" locked="0" code="" scaleX="1.10000002384186" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teamTICCredit" x="256" y="640" name="inst_B34621BD" locked="0" code="" scaleX="1.04999995231628" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Music" x="576" y="64" name="inst_079E0C8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_creditsBackButton" x="1056" y="96" name="inst_C9E26AD0" locked="0" code="" scaleX="1" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
+    <instance objName="obj_backButton" x="1056" y="96" name="inst_6E1D1B73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_creditsTed" x="128" y="96" name="inst_A9E61232" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_creditsTitle" x="512" y="96" name="inst_7D7FB229" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_projectLeadText" x="512" y="192" name="inst_EC20BBC3" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_graphicDesignBAText" x="512" y="320" name="inst_F4E1BE80" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_leadDeveloperText" x="512" y="448" name="inst_58BF78FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_developerText" x="512" y="576" name="inst_EAD9CB4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
