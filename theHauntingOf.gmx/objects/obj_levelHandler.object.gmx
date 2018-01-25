@@ -68,12 +68,12 @@ global.level3 = 2000;
 global.finish = 2000;
 
 //for testing
-global.level1 = 100;
-global.trans1 = 200;
-global.level2 = 300;
-global.trans2 = 400;
-global.level3 = 500;
-global.finish = 500;
+//global.level1 = 100;
+//global.trans1 = 200;
+//global.level2 = 300;
+//global.trans2 = 400;
+//global.level3 = 500;
+//global.finish = 500;
 
 finished = false;
 </string>
