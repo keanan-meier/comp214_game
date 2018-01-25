@@ -94,10 +94,7 @@
       <sprite>sprites\spr_responsibility_3</sprite>
       <sprite>sprites\spr_responsibility_2</sprite>
     </sprites>
-    <sprite>sprites\spr_Quit</sprite>
     <sprite>sprites\spr_gameTitleText</sprite>
-    <sprite>sprites\spr_Credits</sprite>
-    <sprite>sprites\spr_Tutorial</sprite>
     <sprite>sprites\spr_StartGame</sprite>
     <sprite>sprites\spr_teamLogo</sprite>
     <sprite>sprites\spr_startText</sprite>
@@ -117,6 +114,11 @@
     <sprite>sprites\spr_tutorialBackButtonText</sprite>
     <sprite>sprites\spr_tutorialObstacle</sprite>
     <sprite>sprites\spr_sleeping</sprite>
+    <sprites name="MainMenu">
+      <sprite>sprites\spr_Quit</sprite>
+      <sprite>sprites\spr_Credits</sprite>
+      <sprite>sprites\spr_Tutorial</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
