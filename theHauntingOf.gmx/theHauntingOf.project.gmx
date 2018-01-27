@@ -119,6 +119,7 @@
       <sprite>sprites\spr_Credits</sprite>
       <sprite>sprites\spr_Tutorial</sprite>
     </sprites>
+    <sprite>sprites\spr_tutorialTed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -146,8 +147,6 @@
       <object>objects\obj_gameover</object>
       <object>objects\obj_victory</object>
     </objects>
-    <object>objects\obj_Music</object>
-    <object>objects\obj_Credits</object>
     <objects name="menu">
       <object>objects\obj_gameTitleText</object>
       <object>objects\obj_StartGame</object>
@@ -166,13 +165,16 @@
       <object>objects\obj_startText</object>
       <object>objects\obj_Tutorial</object>
       <object>objects\obj_Quit</object>
+      <object>objects\obj_tutorialText</object>
+      <object>objects\obj_Credits</object>
+      <object>objects\obj_Music</object>
     </objects>
     <objects name="tutorial">
       <object>objects\obj_tutorialBackButtonText</object>
       <object>objects\obj_tutorialObstacle</object>
       <object>objects\obj_tutorialBackButton</object>
-      <object>objects\obj_tutorialText</object>
       <object>objects\obj_Tutorial_craig</object>
+      <object>objects\obj_tutorialTed</object>
     </objects>
     <object>objects\obj_sleeping</object>
   </objects>
