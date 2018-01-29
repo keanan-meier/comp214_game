@@ -76,6 +76,8 @@ global.finish = 2000;
 //global.finish = 500;
 
 finished = false;
+
+global.isTrans = false;
 </string>
           </argument>
         </arguments>
@@ -125,6 +127,8 @@ if(currentBackground == 0){
         
         if(global.distance &lt; global.level1){ //LEVEL 1
         
+            global.isTrans = false;
+            
             //enable obstacles
             spawnObstacles = 1;
         
@@ -133,6 +137,8 @@ if(currentBackground == 0){
             background_index[0] = choose(bck_lvl1);
             
         }else if(global.distance &lt; global.trans1){ //TRANSITION 1
+        
+            global.isTrans = true;
         
             //disable obstacles
             spawnObstacles = 0;
@@ -154,7 +160,9 @@ if(currentBackground == 0){
             //}
             
         }else if(global.distance &lt; global.level2){ //LEVEL 2
-              
+            
+            global.isTrans = false;
+          
             //enable obstacles
             spawnObstacles = 1;
         
@@ -172,6 +180,8 @@ if(currentBackground == 0){
             background_index[0] = choose(bck_lvl2); 
         
         }else if(global.distance &lt; global.trans2){ //TRANSITION 2 
+        
+            global.isTrans = true;
         
             //disable obstacles
             spawnObstacles = 0;
@@ -192,6 +202,8 @@ if(currentBackground == 0){
             //}
             
         }else if(global.distance &lt; global.level3){ // LEVEL 3
+        
+            global.isTrans = false;
         
             //enable obstacles
             spawnObstacles = 1;
@@ -273,7 +285,7 @@ if(spawnObstacles == 1){
 }    
     
 
-if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left) &amp;&amp; finished == false) {
+if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left) &amp;&amp; finished == false &amp;&amp; global.isTrans == false) {
     global.distance += 0.5;
 }
 

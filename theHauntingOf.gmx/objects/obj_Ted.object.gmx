@@ -39,6 +39,8 @@ rightSpr = 0;
 leftSpr = 0;
 hitSpr = 0;
 idleSpr = 0;
+
+
 </string>
           </argument>
         </arguments>
@@ -180,8 +182,23 @@ if(hit == 1 &amp;&amp; caught !=1){
 }
 
 // Move horizontally
-x += hspd;
-
+if(global.isTrans){
+    if(x &lt; 620 || x &gt; 660){
+        if(x&lt;640){
+            x = x+5;
+            sprite_index = rightSpr;
+        }
+        if(x&gt;640){
+            x = x-5;
+            sprite_index = leftSpr;
+        }    
+    }else{
+        sprite_index = rightSpr;
+        global.distance += 0.5;
+    }  
+}else{
+    x += hspd;
+}
 // Vertical collisions
 if (place_meeting(x, y+vspd, obj_ground)) {
     while (!place_meeting(x, y+sign(vspd), obj_ground)) {
@@ -189,6 +206,8 @@ if (place_meeting(x, y+vspd, obj_ground)) {
     }
     vspd = 0;
 }
+
+
 
 // Move horizontally
 y += vspd;
