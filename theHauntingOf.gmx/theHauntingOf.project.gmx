@@ -11,6 +11,7 @@
     <sound>sound\button_SoundEffect</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_creditsTitleAndText</sprite>
     <sprite>sprites\spr_Tutorial</sprite>
     <sprite>sprites\spr_Credits</sprite>
     <sprite>sprites\spr_Quit</sprite>
@@ -149,6 +150,7 @@
     <font>fonts\font_main</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_creditsTitleAndText</object>
     <object>objects\obj_Music</object>
     <object>objects\obj_Credits</object>
     <object>objects\obj_tutorialText</object>
