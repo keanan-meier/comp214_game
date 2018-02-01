@@ -58,7 +58,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="32">
+    <event eventtype="5" enumb="13">
       <action>
         <libid>1</libid>
         <id>224</id>
@@ -75,7 +75,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_creditsRoom</room>
+            <room>rm_victory</room>
           </argument>
         </arguments>
       </action>

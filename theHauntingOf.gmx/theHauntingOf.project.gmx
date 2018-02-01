@@ -117,12 +117,24 @@
     <sprite>sprites\spr_tutorialBackButtonText</sprite>
     <sprite>sprites\spr_tutorialObstacle</sprite>
     <sprite>sprites\spr_sleeping</sprite>
+    <sprites name="menu">
+      <sprite>sprites\spr_Quit_Hover</sprite>
+      <sprite>sprites\spr_StartGame_Hover</sprite>
+      <sprite>sprites\spr_Tutorial_Hover</sprite>
+      <sprite>sprites\spr_Credits_Hover</sprite>
+    </sprites>
+    <sprites name="victory">
+      <sprite>sprites\spr_oldMan</sprite>
+      <sprite>sprites\spr_littleMike</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
     <background>background\bck_lvl2</background>
     <background>background\bck_lvl3</background>
     <background>background\bck_transition</background>
+    <background>background\bck_menu</background>
+    <background>background\bck_victory</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -146,6 +158,7 @@
     </objects>
     <object>objects\obj_Music</object>
     <object>objects\obj_Credits</object>
+    <object>objects\obj_sleeping</object>
     <objects name="menu">
       <object>objects\obj_gameTitleText</object>
       <object>objects\obj_StartGame</object>
@@ -172,13 +185,17 @@
       <object>objects\obj_tutorialText</object>
       <object>objects\obj_Tutorial_craig</object>
     </objects>
-    <object>objects\obj_sleeping</object>
+    <objects name="victory">
+      <object>objects\obj_oldMan</object>
+      <object>objects\obj_babyTed</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
     <room>rooms\rm_Intro</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm_gamveover</room>
+    <room>rooms\rm_victory</room>
     <room>rooms\rm_creditsRoom</room>
     <room>rooms\rm_turorialLevelRoom</room>
   </rooms>
