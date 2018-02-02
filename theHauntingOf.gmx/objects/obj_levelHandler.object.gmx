@@ -271,16 +271,42 @@ if(spawnObstacles == 1){
     timeBetween ++;
     
     //level 1 2 second delay
-    if(timeBetween == 60){
-        
-        //get random number   
-        if(round(random_range(0,2)) == 1){
-        
-            obstacle = instance_create(backgroundWidth + 100 ,backgroundHeight - 50,obj_obstacle);
-            obstacle.sprite_index = choose(spr_obstacle_lvl1_1, spr_obstacle_lvl1_2, spr_obstacle_lvl1_3);
+    if(global.distance &lt; global.trans1){
+        if(timeBetween &gt;= 60){
+            
+            //get random number   
+            if(round(random_range(0,2)) == 1){
+            
+                obstacle = instance_create(backgroundWidth + 100 ,backgroundHeight - 50,obj_obstacle);
+                obstacle.sprite_index = choose(spr_obstacle_lvl1_1, spr_obstacle_lvl1_2, spr_obstacle_lvl1_3);
+            }
+            
+            timeBetween = 0;
         }
-        
-        timeBetween = 0;
+    }else if(global.distance &lt; global.trans2){
+        if(timeBetween &gt;= 45){
+            
+            //get random number   
+            if(round(random_range(0,2)) == 1){
+            
+                obstacle = instance_create(backgroundWidth + 100 ,backgroundHeight - 50,obj_obstacle);
+                obstacle.sprite_index = choose(spr_obstacle_lvl1_1, spr_obstacle_lvl1_2, spr_obstacle_lvl1_3);
+            }
+            
+            timeBetween = 0;
+        }
+    }else if(global.distance &lt; global.finish){
+        if(timeBetween &gt;= 30){
+            
+            //get random number   
+            if(round(random_range(0,2)) == 1){
+            
+                obstacle = instance_create(backgroundWidth + 100 ,backgroundHeight - 50,obj_obstacle);
+                obstacle.sprite_index = choose(spr_obstacle_lvl1_1, spr_obstacle_lvl1_2, spr_obstacle_lvl1_3);
+            }
+            
+            timeBetween = 0;
+        }
     }
 }    
     
@@ -342,6 +368,28 @@ if(keyboard_check(vk_right) &amp;&amp; !keyboard_check(vk_left) &amp;&amp; finis
             <kind>1</kind>
             <string>draw_text(640,15, "DISTANCE: " + string(round(global.distance)) + "M");
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>224</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_another_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>11</kind>
+            <room>rm_menuRoom</room>
           </argument>
         </arguments>
       </action>

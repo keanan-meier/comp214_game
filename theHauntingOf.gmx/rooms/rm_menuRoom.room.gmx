@@ -56,6 +56,8 @@
     <instance objName="obj_Tutorial" x="416" y="384" name="inst_257D0D3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Credits" x="672" y="384" name="inst_497EFC72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Quit" x="928" y="384" name="inst_6E5A43EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mute" x="1216" y="32" name="inst_79389195" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_effect" x="0" y="0" name="inst_37CE5719" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

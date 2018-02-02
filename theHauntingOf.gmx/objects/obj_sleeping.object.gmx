@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>timer = 0;
+done = false;
 </string>
           </argument>
         </arguments>
@@ -52,11 +53,16 @@
 timer++;
 if(timer &gt; 30){
 
-    y = y + 10;
-    x = x + 5;
+    if(done == false){
+        y = y + 10;
+        x = x + 5;
+    }
     
     if(y &gt; -120 &amp;&amp; x &gt; -600){
-        room_goto(rm_levelTest);
+        done = true;
+        if(timer &gt; 240){
+            room_goto(rm_levelTest);
+        }
     }
 }
 </string>

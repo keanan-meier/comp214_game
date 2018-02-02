@@ -122,11 +122,16 @@
       <sprite>sprites\spr_StartGame_Hover</sprite>
       <sprite>sprites\spr_Tutorial_Hover</sprite>
       <sprite>sprites\spr_Credits_Hover</sprite>
+      <sprite>sprites\spr_mute</sprite>
+      <sprite>sprites\spr_muted</sprite>
     </sprites>
     <sprites name="victory">
       <sprite>sprites\spr_oldMan</sprite>
       <sprite>sprites\spr_littleMike</sprite>
+      <sprite>sprites\spr_victory_return</sprite>
     </sprites>
+    <sprite>sprites\spr_effect</sprite>
+    <sprite>sprites\spr_shadow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -188,6 +193,14 @@
     <objects name="victory">
       <object>objects\obj_oldMan</object>
       <object>objects\obj_babyTed</object>
+      <object>objects\obj_victory_return</object>
+    </objects>
+    <object>objects\obj_mute</object>
+    <objects name="graphics">
+      <object>objects\obj_shadow_fake</object>
+      <object>objects\obj_shadow</object>
+      <object>objects\obj_effect</object>
+      <object>objects\obj_shadow_resp</object>
     </objects>
   </objects>
   <rooms name="rooms">
