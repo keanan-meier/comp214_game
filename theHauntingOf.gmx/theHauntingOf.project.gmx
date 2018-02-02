@@ -11,6 +11,7 @@
     <sound>sound\button_SoundEffect</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_creditsTitleAndText</sprite>
     <sprite>sprites\spr_testground</sprite>
     <sprite>sprites\spr_tempCursor</sprite>
     <sprite>sprites\spr_ground</sprite>
@@ -132,6 +133,26 @@
     </sprites>
     <sprite>sprites\spr_effect</sprite>
     <sprite>sprites\spr_shadow</sprite>
+    <sprites name="TutorialPage">
+      <sprite>sprites\spr_rightArrowKey</sprite>
+      <sprite>sprites\spr_rightArrowKeyText</sprite>
+      <sprite>sprites\spr_leftArrowKey</sprite>
+      <sprite>sprites\spr_leftArrowKeyText</sprite>
+      <sprite>sprites\spr_enemiesText</sprite>
+      <sprite>sprites\spr_obstaclesText</sprite>
+      <sprite>sprites\spr_spaceBar</sprite>
+      <sprite>sprites\spr_tedText</sprite>
+      <sprite>sprites\spr_spaceBarText</sprite>
+    </sprites>
+    <sprites name="PlotRoom">
+      <sprite>sprites\spr_plotButton</sprite>
+      <sprite>sprites\spr_plotText</sprite>
+      <sprite>sprites\spr_plotRoomTitleText</sprite>
+      <sprite>sprites\spr_plotBackButton</sprite>
+      <sprite>sprites\spr_plotBackButtonText</sprite>
+      <sprite>sprites\spr_Plot</sprite>
+      <sprite>sprites\spr_gameTypeText</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_lvl1</background>
@@ -182,13 +203,33 @@
       <object>objects\obj_startText</object>
       <object>objects\obj_Tutorial</object>
       <object>objects\obj_Quit</object>
+      <object>objects\obj_creditsTitleAndText</object>
+      <object>objects\obj_tutorialText</object>
     </objects>
-    <objects name="tutorial">
+    <objects name="tutorialPage">
       <object>objects\obj_tutorialBackButtonText</object>
       <object>objects\obj_tutorialObstacle</object>
       <object>objects\obj_tutorialBackButton</object>
-      <object>objects\obj_tutorialText</object>
       <object>objects\obj_Tutorial_craig</object>
+      <object>objects\obj_tutorialTed</object>
+      <object>objects\obj_rightArrowKeyText</object>
+      <object>objects\obj_rightArrowKey</object>
+      <object>objects\obj_leftArrowKey</object>
+      <object>objects\obj_leftArrowKeyText</object>
+      <object>objects\obj_enemiesText</object>
+      <object>objects\obj_obstaclesText</object>
+      <object>objects\obj_spaceBar</object>
+      <object>objects\obj_tedText</object>
+      <object>objects\obj_spaceBarText</object>
+    </objects>
+    <objects name="PlotRoom">
+      <object>objects\obj_plotButton</object>
+      <object>objects\obj_plotText</object>
+      <object>objects\obj_plotRoomTitleText</object>
+      <object>objects\obj_plotBackButton</object>
+      <object>objects\obj_plotBackButtonText</object>
+      <object>objects\obj_Plot</object>
+      <object>objects\obj_gameTypeText</object>
     </objects>
     <objects name="victory">
       <object>objects\obj_oldMan</object>
@@ -210,7 +251,8 @@
     <room>rooms\rm_gamveover</room>
     <room>rooms\rm_victory</room>
     <room>rooms\rm_creditsRoom</room>
-    <room>rooms\rm_turorialLevelRoom</room>
+    <room>rooms\rm_turorialPageRoom</room>
+    <room>rooms\rm_plotRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
