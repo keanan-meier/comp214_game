@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>display_reset(8, true);
-
+            <string>
 
 </string>
           </argument>

@@ -55,7 +55,7 @@
     <instance objName="obj_rightArrowKey" x="774" y="173" name="inst_4FAF7F3F" locked="0" code="" scaleX="0.168478265404701" scaleY="0.170329675078392" colour="4294967295" rotation="0"/>
     <instance objName="obj_tutorialObstacle" x="769" y="456" name="inst_33473B8B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_leftArrowKey" x="776" y="111" name="inst_DA03CFEC" locked="0" code="" scaleX="0.168478265404701" scaleY="0.170329675078392" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tutorial_craig" x="544" y="494" name="inst_6F6C35D3" locked="0" code="" scaleX="0.491428583860397" scaleY="0.521008431911468" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tutorial_craig" x="544" y="494" name="inst_6F6C35D3" locked="0" code="" scaleX="0.491428583860397" scaleY="0.521008431911469" colour="4294967295" rotation="0"/>
     <instance objName="obj_spaceBar" x="768" y="231" name="inst_909D74C5" locked="0" code="" scaleX="0.0500000007450581" scaleY="0.0509433969855309" colour="4294967295" rotation="0"/>
     <instance objName="obj_back" x="1056" y="640" name="inst_24FBEE3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controls" x="711" y="87" name="inst_4BFCE342" locked="0" code="" scaleX="1.16417908668518" scaleY="1.11148643493652" colour="4294967295" rotation="0"/>

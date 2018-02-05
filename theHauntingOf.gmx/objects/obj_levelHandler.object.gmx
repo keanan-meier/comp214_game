@@ -296,7 +296,7 @@ if(spawnObstacles == 1){
             timeBetween = 0;
         }
     }else if(global.distance &lt; global.finish){
-        if(timeBetween &gt;= 30){
+        if(timeBetween &gt;= 45){
             
             //get random number   
             if(round(random_range(0,2)) == 1){
