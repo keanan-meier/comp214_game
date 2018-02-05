@@ -51,22 +51,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_tutorialTed" x="608" y="672" name="inst_3A45BE14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rightArrowKey" x="1056" y="224" name="inst_4FAF7F3F" locked="0" code="" scaleX="0.673913061618805" scaleY="0.681564271450043" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorialObstacle" x="1056" y="640" name="inst_33473B8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_leftArrowKey" x="256" y="224" name="inst_DA03CFEC" locked="0" code="" scaleX="0.673913061618805" scaleY="0.681564271450043" colour="4294967295" rotation="0"/>
-    <instance objName="obj_leftArrowKeyText" x="256" y="96" name="inst_139C6259" locked="0" code="" scaleX="1" scaleY="1.01600003242493" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rightArrowKeyText" x="1056" y="96" name="inst_33CE607C" locked="0" code="" scaleX="0.899999976158142" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tutorial_craig" x="256" y="672" name="inst_6F6C35D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemiesText" x="224" y="416" name="inst_6E46CA5E" locked="0" code="" scaleX="0.899999976158142" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_obstaclesText" x="1024" y="512" name="inst_BA893FA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spaceBar" x="672" y="288" name="inst_909D74C5" locked="0" code="" scaleX="0.100000001490116" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tedText" x="608" y="512" name="inst_3CE7734C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spaceBarText" x="672" y="224" name="inst_73AA848B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorialBackButton" x="672" y="96" name="inst_04FE1789" locked="0" code="" scaleX="0.850000023841858" scaleY="0.496124029159546" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorialBackButtonText" x="672" y="96" name="inst_9C8DE410" locked="0" code="" scaleX="0.850000023841858" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plotButton" x="1056" y="384" name="inst_3F3DD8EA" locked="0" code="" scaleX="0.916666686534882" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plotText" x="1056" y="384" name="inst_8EB6579D" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorialTed" x="640" y="704" name="inst_3A45BE14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rightArrowKey" x="774" y="173" name="inst_4FAF7F3F" locked="0" code="" scaleX="0.168478265404701" scaleY="0.170329675078392" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorialObstacle" x="769" y="456" name="inst_33473B8B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_leftArrowKey" x="776" y="111" name="inst_DA03CFEC" locked="0" code="" scaleX="0.168478265404701" scaleY="0.170329675078392" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tutorial_craig" x="544" y="494" name="inst_6F6C35D3" locked="0" code="" scaleX="0.491428583860397" scaleY="0.521008431911468" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spaceBar" x="768" y="231" name="inst_909D74C5" locked="0" code="" scaleX="0.0500000007450581" scaleY="0.0509433969855309" colour="4294967295" rotation="0"/>
+    <instance objName="obj_back" x="1056" y="640" name="inst_24FBEE3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controls" x="711" y="87" name="inst_4BFCE342" locked="0" code="" scaleX="1.16417908668518" scaleY="1.11148643493652" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

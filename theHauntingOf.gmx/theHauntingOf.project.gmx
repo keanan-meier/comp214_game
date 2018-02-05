@@ -9,6 +9,7 @@
     <sound>sound\jumpingSound</sound>
     <sound>sound\game_Music</sound>
     <sound>sound\button_SoundEffect</sound>
+    <sound>sound\snd_snoring</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_creditsTitleAndText</sprite>
@@ -123,6 +124,8 @@
       <sprite>sprites\spr_StartGame_Hover</sprite>
       <sprite>sprites\spr_Tutorial_Hover</sprite>
       <sprite>sprites\spr_Credits_Hover</sprite>
+      <sprite>sprites\spr_back</sprite>
+      <sprite>sprites\spr_back_hover</sprite>
       <sprite>sprites\spr_mute</sprite>
       <sprite>sprites\spr_muted</sprite>
     </sprites>
@@ -135,7 +138,7 @@
     <sprite>sprites\spr_shadow</sprite>
     <sprites name="TutorialPage">
       <sprite>sprites\spr_rightArrowKey</sprite>
-      <sprite>sprites\spr_rightArrowKeyText</sprite>
+      <sprite>sprites\spr_controls</sprite>
       <sprite>sprites\spr_leftArrowKey</sprite>
       <sprite>sprites\spr_leftArrowKeyText</sprite>
       <sprite>sprites\spr_enemiesText</sprite>
@@ -212,7 +215,7 @@
       <object>objects\obj_tutorialBackButton</object>
       <object>objects\obj_Tutorial_craig</object>
       <object>objects\obj_tutorialTed</object>
-      <object>objects\obj_rightArrowKeyText</object>
+      <object>objects\obj_controls</object>
       <object>objects\obj_rightArrowKey</object>
       <object>objects\obj_leftArrowKey</object>
       <object>objects\obj_leftArrowKeyText</object>
@@ -243,6 +246,7 @@
       <object>objects\obj_effect</object>
       <object>objects\obj_shadow_resp</object>
     </objects>
+    <object>objects\obj_back</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menuRoom</room>
